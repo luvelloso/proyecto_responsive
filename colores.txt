@@ -1,0 +1,7 @@
+#eba9a7 rosa 
+#BC8785 oscura
+line-height: 155%;
+background color  #f0f0f0;
+#ffffff;
+ background: #eba9a7; 
+
