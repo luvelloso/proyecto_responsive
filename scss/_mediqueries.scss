@@ -1,0 +1,119 @@
+// SMALL ADVICES
+
+@media only screen and (max-width: 576px) {
+
+
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        padding: 10px;
+
+        .itemMenu {
+            margin-bottom: 2px;
+            width: auto;
+            font-size: 30px;
+            width: auto;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .asideGrid {
+        margin: 0 20px 20px 20px;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .textAside {
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        text-align: center;
+    }
+
+    .titulosGrid {
+        font-size: 25px;
+    }
+
+    .mainGrid {
+        background-color: #ffffff;
+        margin: 0 20px 20px 20px;
+        padding: 30px;
+        width: auto;
+        height: auto;
+
+    }
+
+    .textMain {
+        font-size: 20px;
+    }
+
+    .footerGrid {
+        background-color: #BC8785;
+        color: white;
+        width: auto;
+
+    }
+}
+
+// MEDIUM ADVICES
+@media only screen and (max-width: 768px) and (min-width: 577px) {
+
+
+    .menuContainer {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .itemMenu {
+        padding: 5px;
+        width: auto;
+        font-size: 30px;
+    }
+
+    .asideGrid {
+        margin: 0 20px 20px 20px;
+        align-items: center;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .textAside {
+        font-size: 20px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        text-align: center;
+    }
+
+    .titulosGrid {
+        font-size: 25px;
+    }
+
+    .mainGrid {
+        margin: 0 20px 20px 20px;
+        padding: 30px;
+        width: auto;
+        height: auto;
+
+    }
+
+    .textMain {
+        font-size: 20px;
+    }
+
+    .footerGrid {
+        background-color: #BC8785;
+        font-size: 20px;
+        width: auto;
+    }
+
+}

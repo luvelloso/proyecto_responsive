@@ -1,0 +1,30 @@
+@import "general";
+@import "textos";
+@import "imagenes";
+@import "header";
+@import "grillas";
+@import "efectos";
+
+body {
+    font-size: 12px;
+    background-color: #f2f2f2;
+    list-style: none;
+    color: black;
+    width: 100%;
+}
+
+.claseTable {
+    width: 100%;
+
+    td,
+    ul,
+    li {
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        font-size: 14px;
+        list-style: none;
+        width: auto;
+    }
+}
+
+@import "mediqueries";

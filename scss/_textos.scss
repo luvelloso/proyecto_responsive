@@ -1,0 +1,33 @@
+.titleBlog {
+    font-size: 20px;
+    font-family: 'Koulen', cursive;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #eba9a7;
+}
+
+
+.asideGrid {
+    .textAside {
+        font-size: 12px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+    }
+}
+
+.mainGrid {
+    .textMain {
+        font-size: 12px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        text-align: justify;
+    }
+}
+
+.gridFooter {
+    .textFooter {
+        color: white;
+        font-size: 15px;
+        font-family: 'Roboto Mono', monospace;
+    }
+}

@@ -1,0 +1,12 @@
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.borderBox {
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    border-bottom: px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
+}

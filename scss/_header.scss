@@ -1,0 +1,33 @@
+.propriedadesFlexClasse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .menuContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: nowrap;
+        background-color: #eba9a7;
+        padding: 10px;
+
+        .itemMenu {
+            padding: 5px;
+            width: 100px;
+            list-style: none;
+            background-color: #eba9a7;
+            font-family: 'Koulen', cursive;
+            font-size: 20px;
+
+            a {
+                color: white;
+
+            }
+        }
+    }
+
+}
+
+
+//dentro do nav

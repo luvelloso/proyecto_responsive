@@ -1,0 +1,34 @@
+#imgNav {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+
+  /* PARA DEJAR CENTRALIZADA  */
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+body {
+  img {
+    border: 3px solid #f4acb7;
+  }
+}
+
+// GALERIA FLEXBOX
+.galeriaContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+
+  .itemGaleria {
+    width: 320px;
+    height: auto;
+  }
+
+}
