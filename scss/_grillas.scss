@@ -1,11 +1,11 @@
 body {
   .headerGrid {
     background-color: #f2f2f2;
+    height: 60px;
   }
 
   .navGrid {
     background-color: #f2f2f2;
-
   }
 
   .asideGrid {
@@ -26,6 +26,8 @@ body {
   .footerGrid {
     margin-top: 15px;
     padding: 10px;
+    height: 50px;
+    width: auto;
     background-color: #BC8785;
   }
 }

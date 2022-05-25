@@ -9,9 +9,9 @@ body {
     font-size: 12px;
     background-color: #f2f2f2;
     list-style: none;
-    color: black;
     width: 100%;
 }
+
 
 .claseTable {
     width: 100%;
@@ -19,7 +19,7 @@ body {
     td,
     ul,
     li {
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Playfair Display', serif;
         color: black;
         font-size: 14px;
         list-style: none;
@@ -27,4 +27,51 @@ body {
     }
 }
 
-@import "mediqueries";
+
+        .redesContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            text-align: center;
+            a {
+                width: 40px;
+                height: 40px;
+                color: #BC8785;
+                transition: 0.4s;
+                align-content: center;
+                font-size: 35px;
+                border-radius: 10px;
+
+            }
+
+        }
+        .back-to-top {
+            background-color: #BC8785;
+            border-radius: 10px;
+            bottom: 14px;
+            box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+            color: #ccc;
+            cursor: pointer;
+            height: 40px;
+            position: fixed;
+            right: 22px;
+            width: 40px;
+            z-index: 3;
+          &::after {
+              content: '▲';
+              display: flex;
+              font-size: 15px;
+              justify-content: center;
+              padding-left: 1px;
+              padding-top: 7px;
+            }
+         
+          }
+
+
+        
+
+    @import "mediqueries";
+

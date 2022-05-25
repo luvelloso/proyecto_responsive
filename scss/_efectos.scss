@@ -56,7 +56,7 @@
          width: 24em;
          margin-top: 30px;
          border-right: 2px solid rgba(255, 255, 255, .75);
-         font-size: 180%;
+         font-size: 150%;
          text-align: center;
          white-space: nowrap;
          overflow: hidden;
@@ -65,13 +65,9 @@
  }
 
  .efectoNav {
-     -webkit-transition: 1s linear;
-     transition: 1s linear;
-     border-radius: 0.8rem;
-
      &:hover {
-         -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-         box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+         -webkit-text-shadow:  2px 3px 19px rgba(0, 0, 0, .75);
+         text-shadow: 2px 3px 19px rgba(0, 0, 0, .75);
      }
  }
 

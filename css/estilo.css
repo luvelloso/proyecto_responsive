@@ -7,31 +7,37 @@
 
 .borderBox {
   border-top: 3px solid rgba(255, 255, 255, 0.3);
-  border-bottom: px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.8rem; }
+
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection {
+  color: white;
+  background: #eba9a7;
+  text-shadow: 1px 1px 2px #ccc; }
 
 .titleBlog {
   font-size: 20px;
-  font-family: 'Koulen', cursive;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
   text-align: center;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   color: #eba9a7; }
 
 .asideGrid .textAside {
-  font-size: 12px;
-  font-family: 'Roboto Mono', monospace;
-  color: black; }
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: #2b2b2b; }
 
 .mainGrid .textMain {
-  font-size: 12px;
-  font-family: 'Roboto Mono', monospace;
-  color: black;
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #2b2b2b;
   text-align: justify; }
 
 .gridFooter .textFooter {
   color: white;
-  font-size: 15px;
-  font-family: 'Roboto Mono', monospace; }
+  font-size: 25px;
+  font-family: 'Playfair Display', serif; }
 
 #imgNav {
   width: 150px;
@@ -43,7 +49,9 @@
   display: block; }
 
 body img {
-  border: 3px solid #f4acb7; }
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 3px; }
 
 .galeriaContainer {
   display: flex;
@@ -65,21 +73,26 @@ body img {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
     flex-wrap: nowrap;
     background-color: #eba9a7;
+    height: 20px;
     padding: 10px; }
     .propriedadesFlexClasse .menuContainer .itemMenu {
-      padding: 5px;
       width: 100px;
+      height: auto;
       list-style: none;
       background-color: #eba9a7;
-      font-family: 'Koulen', cursive;
-      font-size: 20px; }
+      font-family: 'Playfair Display', serif;
+      font-size: 18px; }
       .propriedadesFlexClasse .menuContainer .itemMenu a {
-        color: white; }
+        color: white;
+        text-align: center;
+        text-decoration: none; }
 
 body .headerGrid {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  height: 60px; }
 
 body .navGrid {
   background-color: #f2f2f2; }
@@ -100,6 +113,8 @@ body .mainGrid {
 body .footerGrid {
   margin-top: 15px;
   padding: 10px;
+  height: 50px;
+  width: auto;
   background-color: #BC8785; }
 
 /* EFECTOS
@@ -148,19 +163,15 @@ body .footerGrid {
   width: 24em;
   margin-top: 30px;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 180%;
+  font-size: 150%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%); }
 
-.efectoNav {
-  -webkit-transition: 1s linear;
-  transition: 1s linear;
-  border-radius: 0.8rem; }
-  .efectoNav:hover {
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47); }
+.efectoNav:hover {
+  -webkit-text-shadow: 2px 3px 19px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 3px 19px rgba(0, 0, 0, 0.75); }
 
 /* KEYFRAME EFECTOS  */
 @keyframes typewriter {
@@ -223,7 +234,6 @@ body {
   font-size: 12px;
   background-color: #f2f2f2;
   list-style: none;
-  color: black;
   width: 100%; }
 
 .claseTable {
@@ -231,11 +241,47 @@ body {
   .claseTable td,
   .claseTable ul,
   .claseTable li {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Playfair Display', serif;
     color: black;
     font-size: 14px;
     list-style: none;
     width: auto; }
+
+.redesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: center; }
+  .redesContainer a {
+    width: 40px;
+    height: 40px;
+    color: #BC8785;
+    transition: 0.4s;
+    align-content: center;
+    font-size: 35px;
+    border-radius: 10px; }
+
+.back-to-top {
+  background-color: #BC8785;
+  border-radius: 10px;
+  bottom: 14px;
+  box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, 0.75);
+  color: #ccc;
+  cursor: pointer;
+  height: 40px;
+  position: fixed;
+  right: 22px;
+  width: 40px;
+  z-index: 3; }
+  .back-to-top::after {
+    content: '▲';
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 7px; }
 
 @media only screen and (max-width: 576px) {
   .menuContainer {
