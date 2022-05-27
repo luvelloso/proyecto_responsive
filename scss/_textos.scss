@@ -25,10 +25,48 @@
     }
 }
 
-.gridFooter {
+.footerGrid {
     .textFooter {
-        color: white;
-        font-size: 25px;
+        color: #555555;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
         font-family: 'Playfair Display', serif;
     }
+
+    .quote {
+        font-size: 1.4em;
+        width: 45%;
+        margin: 50px auto;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        color: #555555;
+        padding: 0 30px 0 75px;
+        border-left: 5px solid #BC8785;
+        line-height: 1.6;
+        position: relative;
+
+        ::before {
+            font-family: Arial;
+            content: "\201C";
+            color: #BC8785;
+            font-size: 4em;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+
+        ::after {
+            content: '';
+        }
+    }
+
 }
+
+mark {
+    background: rgb(188, 135, 133);
+    background: linear-gradient(0deg, rgba(188, 135, 133, 1) 0%, rgba(235, 169, 167, 1) 100%);
+    color: white;
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+

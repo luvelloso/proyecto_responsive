@@ -19,7 +19,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" a href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css" <!-- LINKS -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <!-- LINKS -->
     <!-- FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,17 +31,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <!-- FONTS  -->
-    <title>Desafio Maquetando w/ BTS.</title>
+    <title>Coding with Lu</title>
 </head>
 
 <body>
     <div class="container-md">
         <div class="row no-gutters">
-            <header class="col-sm-12 col-md-12 col-lg-12">
+            <header clgitass="col-sm-12 col-md-12 col-lg-12">
                 <!-- HEADER -->
                 <div class="headerGrid">
-                    <div class="propriedadesFlexClasse">
-                        <h1 class="efectoText titleBlog anim-typewriter">Coding With Lu</h1>
+                    <div class="propriedadesFlexClasse titleBlog">
+                        <h1 class="efectoText anim-typewriter">Coding With Lu</h1>
                     </div>
                 </div>
             </header>
@@ -48,7 +49,7 @@
         <!-- HEADER -->
         <div class="row no-gutters">
             <header class="col-sm-12 col-md-12 col-lg-12">
-                <div class="navGrid borderBox">
+                <div class="navGrid">
                     <nav class="propriedadesFlexClasse">
                         <ul class="menuContainer">
                             <li class="itemMenu efectoNav"><a href="../index.html">HOME</a></li>
@@ -67,13 +68,19 @@
         <div class="row no-gutters">
             <aside class="col-sm-12 col-md-2 col-lg-2 offset-lg-1 col-xl-2 offset-xl-1">
                 <div class="asideGrid borderBox">
-                    <div class="textAside">
+                    <div class="textAside"> 
                         <img id="imgNav" class="rounded"
-                            src="https://64.media.tumblr.com/301ad8a886380078c0404641a1c3683f/b456857c12012132-20/s400x600/ef936792f6debe09c3d0fd7f72addd892e01dd30.png"
+                            src="../img/imgaside3.jpeg"
                             alt="Lúcia Velloso">
                         <h2 class="titleBlog">lu velloso</h2>
                         <p>Bienvenido a mi blog :-) </p>
                         <p>Acá comparto toda mi experiencia aprendiendo a programar </p>
+                    </div>
+                    <div class="redesContainer">
+                        <a href="https://www.linkedin.com/in/lucezvelloso/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/?lang=pt"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://github.com/luvelloso"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://www.instagram.com/zlucxie/"><i class="fa-brands fa-instagram-square"></i></a>
                     </div>
                 </div>
 
@@ -85,10 +92,35 @@
                 <div class="mainGrid borderBox">
                     <div class="textMain">
                         <article>
-                            <h2 class="titleBlog">SOBRE MI</h2>
-                            <img class="imgEfecto"
-                                src="https://i.pinimg.com/736x/de/c7/77/dec7771f42175011d2677c2b130fab16--headers-twitter-twitter-backgrounds.jpg">
+                            <h2 class="titleBlog">Sobre mi</h2>
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../img/while.JPG">
+                                      </div>
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="../img/bancodedados.jpg">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="../img/uergs _2018.jpg">
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Anterior</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="sr-only">Próximo</span>
+                                </a>
+                              </div>
 
+                                <h2 class="titleBlog">¿Quien soy?</h2>
                             <p>Brasileña viviendo en Buenos Aires - Argentina para lograr graduarme en Ciencias de la
                                 computación.
                                 Graduada en QI Escuelas y Facultades, en tecnologo de informatica, donde recebí una
@@ -97,7 +129,11 @@
                                 objeto en
                                 ago.
                                 2018.
-                                <h2 class="titleBlog">EXPERIENCIAS</h2>
+                                <p><mark>coding since</mark>2017</p>
+                                <p><mark>languages</mark> html, css, javascript, php and phyton</p>
+                                <p><mark>writing since</mark> january, 2022</p>
+                                <p><mark>interests</mark> coffee, books and true crime stories :) </p>
+                                <h2 class="titleBlog">Experiencias</h2>
 
                                 <p> Durante la cursada, tuve la oportunidad de sumar experiencia de pasantía durante 1
                                     año
@@ -118,10 +154,7 @@
                                         atender
                                         larga demanda de tickets del TJRS.
                         </article>
-                        <iframe class="iframeMapa"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1940532.3458544554!2d-67.70747353695658!3d18.20522498319559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c0296261b92a7f9%3A0xf336ec2818049b1a!2sPorto%20Rico!5e0!3m2!1spt-BR!2sar!4v1641743737311!5m2!1spt-BR!2sar"
-                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220895.17940008777!2d-51.17714195!3d-30.108870050000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95199cd2566acb1d%3A0x603111a89f87e91f!2sPorto%20Alegre%2C%20RS%2C%20Brasil!5e0!3m2!1spt-BR!2sar!4v1653606192649!5m2!1spt-BR!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
                     </div>
@@ -133,18 +166,34 @@
 
             <!-- FIM MAIN CONTENIDO -->
 
-            <!-- FOOTER -->
+               <!-- FOOTER -->
 
-            <div class="row no-gutters">
+               <div class="row no-gutters">
+
                 <footer class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="footerGrid">
-                        <div class="textFooter">ADICIONAR UM TEXTO AQUI</div>
-
+                    <div class="footerGrid text-center">
+                        <figure class="quote">
+                            <blockquote>
+                                "You are better off trying something and having it not work and learning from that than
+                                not doing anything at all."
+                            </blockquote>
+                            <figcaption>
+                                &mdash;Mark Zuckerberg</figcaption>
+                        </figure>
+                        <div class="flexFooter">
+                            <button type="button" class="btn btn-outline-dark btn-sm buttonFooter"><a
+                                    href="https://ko-fi.com/">Regaláme un Cafecito</a></button>
+                            <button type="button" class="btn btn-outline-dark btn-sm buttonFooter"><a
+                                    href="https://thenews.substack.com/">Subscribite a mi newsletter</a></button>
+                        </div>
+                        <span class="textFooter">
+                            Coding with Lu | © 2022 Copyright: Lucia Velloso
+                        </span>
                     </div>
-
             </div>
-
-            <!--FIN FOOTER -->
+        </div>
+        </footer>
+          <!--FIN FOOTER -->
 
 
 
@@ -162,6 +211,11 @@
                 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
                 crossorigin="anonymous">
             </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous">
+            </script>
+            <script src="https://kit.fontawesome.com/23935a5c97.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

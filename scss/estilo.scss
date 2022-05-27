@@ -12,66 +12,110 @@ body {
     width: 100%;
 }
 
+.redesContainer {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: center;
 
-.claseTable {
-    width: 100%;
+    a {
+        width: 40px;
+        height: 40px;
+        color: #BC8785;
+        transition: 0.4s;
+        align-content: center;
+        font-size: 35px;
+        border-radius: 10px;
 
-    td,
-    ul,
-    li {
-        font-family: 'Playfair Display', serif;
-        color: black;
-        font-size: 14px;
-        list-style: none;
-        width: auto;
     }
+
 }
 
+.flexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 
-        .redesContainer {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-            text-align: center;
-            a {
-                width: 40px;
-                height: 40px;
-                color: #BC8785;
-                transition: 0.4s;
-                align-content: center;
-                font-size: 35px;
-                border-radius: 10px;
+    .buttonFooter {
+        width: 180px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        font-family: 'Playfair Display', serif;
+        background-color: #ccc;
 
-            }
-
+        a {
+            text-decoration: none;
+            color: #555555;
         }
-        .back-to-top {
-            background-color: #BC8785;
-            border-radius: 10px;
-            bottom: 14px;
-            box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
-            color: #ccc;
-            cursor: pointer;
-            height: 40px;
-            position: fixed;
-            right: 22px;
-            width: 40px;
-            z-index: 3;
-          &::after {
-              content: '▲';
-              display: flex;
-              font-size: 15px;
-              justify-content: center;
-              padding-left: 1px;
-              padding-top: 7px;
-            }
-         
-          }
+    }
 
+}
+.table{
+    border-radius: 0.8rem;
+    background-color: rgb(188, 135, 133);
+    color: white;
+    width: 100%;
+    ul,li {
+        text-decoration: none;
+        list-style: none;
+    }
 
-        
+}
 
-    @import "mediqueries";
+.contact_form {  
+    width: 460px; 
+    height: auto;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px; 
+    input{
+        width: 408px; 
+        height: 40px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #BC8785; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+      }
+      textarea{
+        background-color: #fbfbfb; 
+        width: 405px; 
+        height: 150px; 
+        border-radius: 5px;  
+        border-style: solid; 
+        border-width: 1px; 
+        border-color: #BC8785; 
+        margin-top: 10px;  
+        padding-left: 10px;
+        margin-bottom: 20px; 
+        padding-top: 15px; 
+      }
+      label{
+        display: block; 
+        float: center;  
+      }
+      button{
+        margin-bottom: 20px; 
+        margin-top: 10px;   
+        color: white;
+        background-color: #BC8785; 
+        border-color: #BC8785; 
+        border-style: solid; 
+        border-radius: 0.8rem;  
+        width: 100px;
+      }
+    
 
+  }
+  
+  
+
+@import "mediqueries";
