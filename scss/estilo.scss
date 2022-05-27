@@ -9,7 +9,8 @@ body {
     font-size: 12px;
     background-color: #f2f2f2;
     list-style: none;
-    width: 100%;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .redesContainer {
@@ -55,67 +56,73 @@ body {
     }
 
 }
-.table{
+
+.table {
     border-radius: 0.8rem;
     background-color: rgb(188, 135, 133);
     color: white;
     width: 100%;
-    ul,li {
+
+    ul,
+    li {
         text-decoration: none;
         list-style: none;
     }
 
 }
 
-.contact_form {  
-    width: 460px; 
+.contact_form {
+    width: 460px;
     height: auto;
     margin: 40px auto;
     border-radius: 10px;
     padding-bottom: 20px;
-    padding-left: 30px; 
-    input{
-        width: 408px; 
-        height: 40px; 
-        border-radius: 5px;  
-        border-style: solid; 
-        border-width: 1px; 
-        border-color: #BC8785; 
-        margin-top: 10px;  
-        padding-left: 10px;
-        margin-bottom: 20px; 
-      }
-      textarea{
-        background-color: #fbfbfb; 
-        width: 405px; 
-        height: 150px; 
-        border-radius: 5px;  
-        border-style: solid; 
-        border-width: 1px; 
-        border-color: #BC8785; 
-        margin-top: 10px;  
-        padding-left: 10px;
-        margin-bottom: 20px; 
-        padding-top: 15px; 
-      }
-      label{
-        display: block; 
-        float: center;  
-      }
-      button{
-        margin-bottom: 20px; 
-        margin-top: 10px;   
-        color: white;
-        background-color: #BC8785; 
-        border-color: #BC8785; 
-        border-style: solid; 
-        border-radius: 0.8rem;  
-        width: 100px;
-      }
-    
+    padding-left: 30px;
 
-  }
-  
-  
+    input {
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BC8785;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BC8785;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+    }
+
+    label {
+        display: block;
+        float: center;
+    }
+
+    button {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: #BC8785;
+        border-color: #BC8785;
+        border-style: solid;
+        border-radius: 0.8rem;
+        width: 100px;
+    }
+
+
+}
+
 
 @import "mediqueries";

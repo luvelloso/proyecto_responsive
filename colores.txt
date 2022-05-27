@@ -4,4 +4,6 @@ line-height: 155%;
 background color  #f0f0f0;
 #ffffff;
  background: #eba9a7; 
+ background: rgb(188, 135, 133);
+        background: linear-gradient(0deg, rgba(188, 135, 133, 1) 0%, rgba(235, 169, 167, 1) 100%);
 

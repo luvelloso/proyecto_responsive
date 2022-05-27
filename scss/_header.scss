@@ -1,35 +1,27 @@
+nav {
+    width: 100vw;
+
+    button {
+        color: white;
+        text-align: start;
+    }
+}
+
+.navBarClasse {
+    padding: 5px;
+
+    a {
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Playfair Display', serif;
+        list-style: none;
+        font-size: 13px;
+    }
+}
+
 .propriedadesFlexClasse {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-    .menuContainer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        background: rgb(188, 135, 133);
-        background: linear-gradient(0deg, rgba(188, 135, 133, 1) 0%, rgba(235, 169, 167, 1) 100%);
-        height: 20px;
-        padding: 10px;
-
-        .itemMenu {
-            width: 100px;
-            height: auto;
-            list-style: none;
-            font-family: 'Playfair Display', serif;
-            font-size: 18px;
-
-            a {
-                color: #f2f2f2;
-                text-align: center;
-                text-decoration: none;
-
-            }
-        }
-    }
-
 }
-

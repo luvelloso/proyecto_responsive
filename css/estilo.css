@@ -93,38 +93,38 @@ body img {
     width: 320px;
     height: auto; }
 
+nav {
+  width: 100vw; }
+  nav button {
+    color: white;
+    text-align: start; }
+
+.navBarClasse {
+  padding: 5px; }
+  .navBarClasse a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    font-size: 13px; }
+
 .propriedadesFlexClasse {
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .propriedadesFlexClasse .menuContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    background: #bc8785;
-    background: linear-gradient(0deg, #bc8785 0%, #eba9a7 100%);
-    height: 20px;
-    padding: 10px; }
-    .propriedadesFlexClasse .menuContainer .itemMenu {
-      width: 100px;
-      height: auto;
-      list-style: none;
-      font-family: 'Playfair Display', serif;
-      font-size: 18px; }
-      .propriedadesFlexClasse .menuContainer .itemMenu a {
-        color: #f2f2f2;
-        text-align: center;
-        text-decoration: none; }
 
 body .headerGrid {
   background-color: #f2f2f2;
-  height: 60px; }
+  height: 33px;
+  margin-bottom: 30px; }
 
 body .navGrid {
-  background-color: #f2f2f2; }
+  background: #bc8785;
+  background: linear-gradient(0deg, #bc8785 0%, #eba9a7 100%);
+  margin-bottom: 30px;
+  width: 100vw;
+  overflow-x: hidden; }
 
 body .asideGrid {
   background-color: #ffffff;
@@ -143,7 +143,8 @@ body .footerGrid {
   margin-top: 15px;
   padding: 2px 10px 2px 10px;
   height: auto;
-  width: auto;
+  width: 100%;
+  overflow-x: hidden;
   background: #bc8785;
   background: linear-gradient(0deg, #bc8785 0%, #eba9a7 100%); }
 
@@ -264,7 +265,8 @@ body {
   font-size: 12px;
   background-color: #f2f2f2;
   list-style: none;
-  width: 100%; }
+  width: 100vw;
+  overflow-x: hidden; }
 
 .redesContainer {
   margin-bottom: 20px;
@@ -304,7 +306,8 @@ body {
   background-color: #bc8785;
   color: white;
   width: 100%; }
-  .table ul, .table li {
+  .table ul,
+  .table li {
     text-decoration: none;
     list-style: none; }
 
@@ -351,46 +354,70 @@ body {
     width: 100px; }
 
 @media only screen and (max-width: 576px) {
-  .menuContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-wrap: nowrap;
-    padding: 10px; }
-    .menuContainer .itemMenu {
-      margin-bottom: 2px;
-      width: auto;
-      font-size: 30px;
-      width: auto; }
-    .menuContainer a {
-      text-decoration: none; }
+  .headerGrid {
+    display: none; }
+  .navGrid .navBarClasse {
+    padding: 5px;
+    height: 20px; }
   .asideGrid {
     margin: 0 20px 20px 20px;
     align-items: center;
     width: auto;
-    height: auto;
     padding: 10px; }
-  .textAside {
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
-    color: black;
-    text-align: center; }
-  .titulosGrid {
-    font-size: 25px; }
+    .asideGrid .textAside {
+      font-size: 15px;
+      text-align: center; }
   .mainGrid {
-    background-color: #ffffff;
     margin: 0 20px 20px 20px;
     padding: 30px;
-    width: auto;
-    height: auto; }
-  .textMain {
-    font-size: 20px; }
-  .footerGrid {
-    background-color: #BC8785;
-    color: white;
+    width: auto; }
+    .mainGrid .textMain {
+      font-size: 15px; }
+    .mainGrid .contact_form {
+      width: 100%;
+      height: auto;
+      margin: 10px auto;
+      border-radius: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px; }
+      .mainGrid .contact_form input {
+        width: 408px;
+        height: 40px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BC8785;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px; }
+      .mainGrid .contact_form textarea {
+        background-color: #fbfbfb;
+        width: 405px;
+        height: 150px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #BC8785;
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        padding-top: 15px; }
+      .mainGrid .contact_form label {
+        display: block;
+        float: center; }
+      .mainGrid .contact_form button {
+        margin-bottom: 20px;
+        margin-top: 10px;
+        color: white;
+        background-color: #BC8785;
+        border-color: #BC8785;
+        border-style: solid;
+        border-radius: 0.8rem;
+        width: 100px; }
+  .table {
     width: auto; } }
 
-@media only screen and (max-width: 768px) and (min-width: 577px) {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
   .menuContainer {
     flex-direction: row;
     flex-wrap: nowrap;

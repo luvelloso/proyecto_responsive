@@ -1,25 +1,14 @@
 // SMALL ADVICES
 
 @media only screen and (max-width: 576px) {
+    .headerGrid {
+        display: none;
+    }
 
-
-    .menuContainer {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        flex-wrap: nowrap;
-        padding: 10px;
-
-        .itemMenu {
-            margin-bottom: 2px;
-            width: auto;
-            font-size: 30px;
-            width: auto;
-
-        }
-
-        a {
-            text-decoration: none;
+    .navGrid {
+        .navBarClasse {
+            padding: 5px;
+            height: 20px;
         }
     }
 
@@ -27,44 +16,84 @@
         margin: 0 20px 20px 20px;
         align-items: center;
         width: auto;
-        height: auto;
         padding: 10px;
-    }
 
-    .textAside {
-        font-size: 20px;
-        font-family: 'Roboto Mono', monospace;
-        color: black;
-        text-align: center;
-    }
-
-    .titulosGrid {
-        font-size: 25px;
+        .textAside {
+            font-size: 15px;
+            text-align: center;
+        }
     }
 
     .mainGrid {
-        background-color: #ffffff;
         margin: 0 20px 20px 20px;
         padding: 30px;
         width: auto;
-        height: auto;
+        .textMain {
+            font-size: 15px;
+        }
+
+        .contact_form {
+            width: 100%;
+            height: auto;
+            margin: 10px auto;
+            border-radius: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+
+            input {
+                width: 408px;
+                height: 40px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #BC8785;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                background-color: #fbfbfb;
+                width: 405px;
+                height: 150px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #BC8785;
+                margin-top: 10px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+                padding-top: 15px;
+            }
+
+            label {
+                display: block;
+                float: center;
+            }
+
+            button {
+                margin-bottom: 20px;
+                margin-top: 10px;
+                color: white;
+                background-color: #BC8785;
+                border-color: #BC8785;
+                border-style: solid;
+                border-radius: 0.8rem;
+                width: 100px;
+            }
+
+
+        }
 
     }
 
-    .textMain {
-        font-size: 20px;
-    }
-
-    .footerGrid {
-        background-color: #BC8785;
-        color: white;
+    .table {
         width: auto;
-
     }
 }
 
 // MEDIUM ADVICES
-@media only screen and (max-width: 768px) and (min-width: 577px) {
+@media only screen and (min-width: 577px) and (max-width: 992px)  {
 
 
     .menuContainer {
