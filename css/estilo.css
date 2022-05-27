@@ -10,7 +10,11 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.8rem; }
 
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection {
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
   color: white;
   background: #eba9a7;
   text-shadow: 1px 1px 2px #ccc; }
@@ -373,6 +377,23 @@ body {
     width: auto; }
     .mainGrid .textMain {
       font-size: 15px; }
+    .mainGrid .galeriaContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: auto; }
+      .mainGrid .galeriaContainer .itemGaleria {
+        align-items: center;
+        width: 200px;
+        height: auto; }
+    .mainGrid .table {
+      border-radius: 0.5rem; }
+      .mainGrid .table tr td {
+        padding: 5px;
+        font-size: 10px;
+        text-align: justify; }
     .mainGrid .contact_form {
       width: 100%;
       height: auto;
@@ -381,41 +402,20 @@ body {
       padding-bottom: 5px;
       padding-left: 10px; }
       .mainGrid .contact_form input {
-        width: 408px;
-        height: 40px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #BC8785;
-        margin-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 20px; }
+        width: 100%; }
       .mainGrid .contact_form textarea {
-        background-color: #fbfbfb;
-        width: 405px;
-        height: 150px;
-        border-radius: 5px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: #BC8785;
-        margin-top: 10px;
-        padding-left: 10px;
-        margin-bottom: 20px;
-        padding-top: 15px; }
-      .mainGrid .contact_form label {
-        display: block;
-        float: center; }
-      .mainGrid .contact_form button {
-        margin-bottom: 20px;
-        margin-top: 10px;
-        color: white;
-        background-color: #BC8785;
-        border-color: #BC8785;
-        border-style: solid;
-        border-radius: 0.8rem;
-        width: 100px; }
-  .table {
-    width: auto; } }
+        width: 100%; }
+  .footerGrid .quote {
+    font-size: 12px; }
+  .footerGrid .flexFooter {
+    display: flex;
+    flex-direction: column; }
+    .footerGrid .flexFooter .buttonFooter {
+      margin: 2px; }
+      .footerGrid .flexFooter .buttonFooter a {
+        font-size: 12px; }
+  .footerGrid .textFooter {
+    font-size: 12px; } }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .menuContainer {

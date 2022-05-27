@@ -28,8 +28,37 @@
         margin: 0 20px 20px 20px;
         padding: 30px;
         width: auto;
+
         .textMain {
             font-size: 15px;
+        }
+
+        .galeriaContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: auto;
+
+            .itemGaleria {
+                align-items: center;
+                width: 200px;
+                height: auto;
+            }
+
+        }
+
+        .table {
+            border-radius: 0.5rem;
+            tr{
+                td{
+                    padding: 5px;
+                    font-size: 10px;
+                    text-align: justify;
+                }
+            }
+        
         }
 
         .contact_form {
@@ -41,59 +70,41 @@
             padding-left: 10px;
 
             input {
-                width: 408px;
-                height: 40px;
-                border-radius: 5px;
-                border-style: solid;
-                border-width: 1px;
-                border-color: #BC8785;
-                margin-top: 10px;
-                padding-left: 10px;
-                margin-bottom: 20px;
+                width: 100%;
             }
 
             textarea {
-                background-color: #fbfbfb;
-                width: 405px;
-                height: 150px;
-                border-radius: 5px;
-                border-style: solid;
-                border-width: 1px;
-                border-color: #BC8785;
-                margin-top: 10px;
-                padding-left: 10px;
-                margin-bottom: 20px;
-                padding-top: 15px;
+                width: 100%;
             }
-
-            label {
-                display: block;
-                float: center;
-            }
-
-            button {
-                margin-bottom: 20px;
-                margin-top: 10px;
-                color: white;
-                background-color: #BC8785;
-                border-color: #BC8785;
-                border-style: solid;
-                border-radius: 0.8rem;
-                width: 100px;
-            }
-
-
         }
 
     }
-
-    .table {
-        width: auto;
+    .footerGrid {
+        .quote {
+            font-size: 12px;
+    }
+    .flexFooter {
+        display: flex;
+        flex-direction: column;
+        .buttonFooter {
+            margin: 2px;
+    
+            a {
+                font-size: 12px;
+            }
+        }
+    
+    }
+    .textFooter {
+        font-size: 12px;
     }
 }
 
+}
+
+
 // MEDIUM ADVICES
-@media only screen and (min-width: 577px) and (max-width: 992px)  {
+@media only screen and (min-width: 577px) and (max-width: 992px) {
 
 
     .menuContainer {
